@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/black"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="0dp"
+        android:layout_weight="5">
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_weight="5"
+            tools:ignore="NestedWeights">
+            <View
+                android:id="@+id/view1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:background="#6977bf"
+                android:layout_marginRight="5dp"
+                android:layout_marginLeft="0dp"
+                android:layout_marginTop="0dp"
+                android:layout_marginBottom="5dp" />
+            <View
+                android:id="@+id/view2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:background="#e16199"
+                android:layout_marginRight="5dp"
+                android:layout_marginLeft="0dp"
+                android:layout_marginTop="5dp"
+                android:layout_marginBottom="10dp"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_weight="4">
+            <View
+                android:id="@+id/view3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:background="#b12a19"
+                android:layout_marginRight="0dp"
+                android:layout_marginLeft="5dp"
+                android:layout_marginTop="0dp"
+                android:layout_marginBottom="5dp" />
+            <View
+                android:id="@+id/view4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:background="#ffffff"
+                android:layout_marginRight="0dp"
+                android:layout_marginLeft="5dp"
+                android:layout_marginTop="5dp"
+                android:layout_marginBottom="5dp"/>
+            <View
+                android:id="@+id/view5"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:background="#253a9c"
+                android:layout_marginRight="0dp"
+                android:layout_marginLeft="5dp"
+                android:layout_marginTop="5dp"
+                android:layout_marginBottom="0dp"/>
+        </LinearLayout>
+    </LinearLayout>
+
+    <SeekBar
+        android:id="@+id/seekBar"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:progressDrawable="@drawable/seekbar_line"
+        android:thumb="@drawable/seekbar_thumb"/>
+</LinearLayout>
